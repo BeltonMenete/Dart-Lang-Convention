@@ -24,13 +24,13 @@ This document outlines the most important coding style conventions for the Dart 
 
 - **Documentation Comments**: Use `///` for documentation comments. Place them before declarations.
 
-``dart
+````dart
 /// This is a documentation comment for the class.
 class MyClass {
   /// This method does something.
   void doSomething() {}
 }
-``
+````
 
 ## Best Practices
 Avoid Globals: Minimize the use of global variables.
@@ -41,18 +41,18 @@ Avoid Deep Nesting: Refactor code to avoid deep nesting of functions and loops.
 
 Null Safety: Make use of Dart's null safety features to prevent null reference errors.
 
-``dart
+````dart
 String? nullableString;
 String nonNullableString = "Hello";
 Asynchronous Programming: Use async and await for asynchronous programming.
-``
+````
 
-``dart
+````dart
 Future<void> fetchData() async {
   var data = await getData();
   // process data
 }
-``
+````
 ## Conclusion
 Adhering to these conventions will help maintain a high standard of code quality and readability in your Dart projects. Happy coding!
 
