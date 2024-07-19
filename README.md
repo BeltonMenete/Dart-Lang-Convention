@@ -1,6 +1,6 @@
 # Dart-Lang-Convention
 
-This document outlines the most important coding style conventions for the Dart programming language. Following these guidelines will help ensure that your code is consistent, readable, and maintainable.
+This guide is my secret weapon for writing beautiful, easy-to-understand Dart code. 
 
 ## Table of Contents
 1. [File Organization](#file-organization)
@@ -13,12 +13,41 @@ This document outlines the most important coding style conventions for the Dart 
 - **File Names**: Use `snake_case` for file names. Example: `my_file.dart`
 - **Directory Structure**: Organize files by feature or functionality, not by type. 
 
+<mark>Do</mark> name packages, directories, and source files using `lowercase_with_underscores` **(snake_case)**
+
+````code
+// Good
+  my_package
+└─ lib
+   └─ file_system.dart
+   └─ slider_menu.dart
+````
+````code
+// Bad
+mypackage
+└─ lib
+   └─ file-system.dart
+   └─ SliderMenu.dart
+````
+
+
 ## Naming Conventions
 
 - **Classes**: Use `PascalCase` for class names. Example: `MyClass`
 - **Methods and Variables**: Use `camelCase` for method and variable names. Example: `myVariable`, `calculateTotal()`
 - **Constants**: Use `ALL_CAPS` with underscores for constants. Example: `MAX_COUNT`
 - **Libraries**: Use `snake_case` for library names. Example: `my_library`
+
+
+<mark>Do</mark> name import prefixes using `lowercase_with_underscores` **(snake_case)**
+
+````code
+// Good
+import 'package:angular_components/angular_components.dart' as angular_components;
+
+// Bad
+import 'package:angular_components/angular_components.dart' as angularComponents;
+````
 
 ## Comments
 
